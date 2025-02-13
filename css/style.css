@@ -1,0 +1,700 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+  
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.krub-extralight {
+    font-family: "Krub", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .krub-light {
+    font-family: "Krub", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .krub-regular {
+    font-family: "Krub", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .krub-medium {
+    font-family: "Krub", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .krub-semibold {
+    font-family: "Krub", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .krub-bold {
+    font-family: "Krub", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .krub-extralight-italic {
+    font-family: "Krub", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .krub-light-italic {
+    font-family: "Krub", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .krub-regular-italic {
+    font-family: "Krub", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .krub-medium-italic {
+    font-family: "Krub", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .krub-semibold-italic {
+    font-family: "Krub", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .krub-bold-italic {
+    font-family: "Krub", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @media screen and (min-width: 319px){
+    .contenedor-seccion-1 {
+        height: 415px;
+        background-image: url(../images/Fondo1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .nav-bar-bg {
+      display: none;
+    }
+
+    .encabezado {
+        height: 20%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    }
+
+    .menu-desplegable {
+        position: absolute;
+        right: 10%;
+        top: 40%;
+        background-color: #d03b40;
+        padding: 1%;
+    }
+
+    .contenido-seccion-1 {
+        height: 280px;
+        position: absolute;
+        top: 20%;
+        left: 2%;
+        right: 2%;
+        line-height: 125%;
+        overflow: hidden;
+        color: #f5f0ed;
+        text-align: center;
+    }
+
+    .frase-principal {
+        position:absolute;
+        left: 10%;
+        right: 10%;
+        font-size: 180%;
+        line-height: 100%;
+    }
+
+    .decoracion {
+      position: absolute;
+      top: 80%;
+      left: 25%;
+      right: 25%;
+    }
+
+    .parrafo-1 {
+      font-size: small;
+        position: absolute;
+        top: 30%;
+        left: 5%;
+        right: 5%;
+    }
+
+    .contenedor-seccion-2 {
+      height: 450px;
+      line-height: 125%;
+    }
+
+    .contenido-1-seccion-2 {
+      height: 50%;
+      color: #f5f0ed;
+      text-align: center;
+      background-color: #d03b40;
+      position: relative;
+    }
+
+    .encabezado-1-seccion-2 {
+      font-size:larger;
+      position: absolute;
+      top: 15%;
+      left: 20%;
+      right: 20%;
+    }
+
+    .parrafo-1-seccion-2 {
+      font-size: small;
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      right: 5%;
+    }
+
+    .contenido-2-seccion-2 {
+      height: 50%;
+      color: #d03b40;
+      background-color: #ded6c0;
+      text-align: center;
+      position: relative;
+    }
+
+    .encabezado-2-seccion-2 {
+      font-size:larger;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      right: 15%;
+    }
+
+    .parrafo-2-seccion-2 {
+      font-size: small;
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      right: 5%;
+    }
+
+    .contenedor-seccion-3 {
+      height: 400px;
+      background-image: url(../images/Fondo2.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #f5f0ed;
+      text-align: center;
+      line-height: 125%;
+      position: relative;
+    }
+
+    .encabezado-1-seccion-3 {
+      font-size: 180%;
+      position: absolute;
+      top: 15%;
+      left: 10%;
+      right: 10%;
+    }
+
+    .parrafo-1-seccion-3 {
+      font-size: small;
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      right: 5%;
+    }
+    
+    .boton-1-seccion-3 {
+      position: absolute;
+      top: 70%;
+      left: 5%;
+      right: 5%;
+    }
+
+    a {
+      text-align: center;
+      font-size: medium;
+      text-decoration: none;
+      color: #f5f0ed;
+      border: 3px solid #f5f0ed;
+      padding: 2%;
+    }
+
+    .contenedor-seccion-4 {
+      height: 1200px;
+      line-height: 125%;
+      text-align:left;
+      color: #3c3c3b;
+    }
+
+    .img-seccion-4 {
+      width: 80px;
+      height: 80px;
+    }
+
+    .contenido-1-seccion-4 {
+      position: relative;
+      height: 25%;
+    }
+
+    .encabezado-1-seccion-4 {
+      font-size: medium;
+      position: absolute;
+      top: 40%;
+      left: 2%;
+      right: 2%;
+    }
+
+    .parrafo-1-seccion-4 {
+      font-size: small;
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      right: 2%;
+    }
+
+    .imagen-contenido-1-seccion-4 {
+      position: absolute;
+      top: 10%;
+      left: 40%;
+      right: 40%;
+    }
+
+    .contenido-2-seccion-4 {
+      position: relative;
+      height: 25%;
+    }
+
+    .encabezado-2-seccion-4 {
+      font-size: medium;
+      position: absolute;
+      top: 40%;
+      left: 2%;
+      right: 2%;
+    }
+
+    .parrafo-2-seccion-4 {
+      font-size: small;
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      right: 2%;
+    }
+
+    .imagen-contenido-2-seccion-4 {
+      position: absolute;
+      top: 10%;
+      left: 40%;
+      right: 40%;
+    }
+
+    .contenido-3-seccion-4 {
+      position: relative;
+      height: 25%;
+    }
+
+    .encabezado-3-seccion-4 {
+      font-size: medium;
+      position: absolute;
+      top: 40%;
+      left: 2%;
+      right: 2%;
+    }
+
+    .parrafo-3-seccion-4 {
+      font-size: small;
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      right: 2%;
+    }
+
+    .imagen-contenido-3-seccion-4 {
+      position: absolute;
+      left: 40%;
+      right: 40%;
+    }
+
+    .contenido-4-seccion-4 {
+      position: relative;
+      height: 25%;
+    }
+
+    .encabezado-4-seccion-4 {
+      font-size: medium;
+      position: absolute;
+      top: 40%;
+      left: 2%;
+      right: 2%;
+    }
+
+    .parrafo-4-seccion-4 {
+      font-size: small;
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      right: 2%;
+    }
+
+    .imagen-contenido-4-seccion-4 {
+      position: absolute;
+      left: 40%;
+      right: 40%;
+    }
+
+    .contenedor-seccion-5 {
+      height: 450px;
+      line-height: 125%;
+      text-align: center;
+    }
+
+    .contenido-1-seccion-5 {
+      height: 50%;
+      color: #d03b40;
+      background-color: #ded6c0;
+      position: relative;
+    }
+
+    .encabezado-1-seccion-5 {
+      font-size:larger;
+      position: absolute;
+      top: 15%;
+      left: 20%;
+      right: 20%;
+    }
+
+    .parrafo-1-seccion-5 {
+      font-size: small;
+      position: absolute;
+      top: 40%;
+      left: 5%;
+      right: 5%;
+    }
+
+    .contenido-2-seccion-5 {
+      height: 50%;
+      color: #f5f0ed;
+      background-color: #d03b40;
+      text-align: center;
+      position: relative;
+    }
+
+    .encabezado-2-seccion-5 {
+      font-size:larger;
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      right: 15%;
+    }
+
+    .parrafo-2-seccion-5 {
+      font-size: small;
+      position: absolute;
+      top: 40%;
+      left: 25%;
+      right: 25%;
+    }
+
+    .footer {
+      height: 60px;
+      text-align: left;
+      line-height: 125%;
+      position: relative;
+      color: #f5f0ed;
+      background-color: #3c3c3b;
+      font-size: small;
+    }
+
+    .parrafo-1-footer {
+      position: absolute;
+      top: 25%;
+      bottom: 25%;
+      left: 10%;
+      right: 10%;
+    }
+
+    @media screen and (min-width: 1023px){
+
+      .menu-desplegable {
+        display: none;
+      }
+
+      .encabezado {
+        position: relative;
+      }
+      .nav-bar-bg {
+        display: block;
+        width: 500px;
+        height: 20px;
+        color:#f5f0ed;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        right: 50%;
+      }
+
+      .link {
+        float: left;
+        width: 20%;
+      }
+
+      .contenedor-seccion-2 {
+        height: 450px;
+      }
+
+      .contenido-1-seccion-2 {
+        height: 100%;
+        float: left;
+        width: 50%;
+      }
+
+      .contenido-2-seccion-2 {
+        height: 100%;
+        float:left;
+        width: 50%;
+      }
+
+      .contenedor-seccion-4 {
+        height: 500px;
+      }
+
+      .contenido-1-seccion-4 {
+        float: left;
+        height: 50%;
+        width: 50%;
+      }
+
+      .contenido-2-seccion-4 {
+        float: left;
+        height: 50%;
+        width: 50%;
+      }
+
+      .contenido-3-seccion-4 {
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+
+      .contenido-4-seccion-4 {
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+
+      .contenedor-seccion-5 {
+        height: 450px;
+      }
+
+      .contenido-1-seccion-5 {
+        height: 100%;
+        float: left;
+        width: 50%;
+      }
+
+      .contenido-2-seccion-5 {
+        height: 100%;
+        float:left;
+        width: 50%;
+      }
+
+      .footer {
+        height: 60px;
+        text-align: left;
+        line-height: 125%;
+        position: relative;
+        color: #f5f0ed;
+        background-color: #3c3c3b;
+        font-size: small;
+      }
+  
+      .parrafo-1-footer .fecha {
+        float: left;
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+      }
+
+      .parrafo-1-footer .derechos {
+        float: left;
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+        left: 15%;
+        right: 15%;
+      }
+    }
+
+    @media screen and (min-width: 2559px){
+
+      .menu-desplegable {
+        display: none;
+      }
+
+      .encabezado {
+        position: relative;
+      }
+      .nav-bar-bg {
+        display: block;
+        width: 750px;
+        height: 20px;
+        color:#f5f0ed;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        right: 50%;
+      }
+
+      .link {
+        float: left;
+        width: 20%;
+      }
+
+      .contenedor-seccion-2 {
+        height: 450px;
+      }
+
+      .contenido-1-seccion-2 {
+        height: 100%;
+        float: left;
+        width: 50%;
+        font-size: 35px;
+      }
+
+      .contenido-2-seccion-2 {
+        height: 100%;
+        float:left;
+        width: 50%;
+        font-size: 35px;
+      }
+
+      .contenedor-seccion-4 {
+        height: 500px;
+      }
+
+      .contenido-1-seccion-4 {
+        float: left;
+        height: 50%;
+        width: 50%;
+      }
+
+      .contenido-2-seccion-4 {
+        float: left;
+        height: 50%;
+        width: 50%;
+      }
+
+      .contenido-3-seccion-4 {
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+
+      .contenido-4-seccion-4 {
+        float: left;
+        width: 50%;
+        height: 50%;
+      }
+
+      .contenedor-seccion-5 {
+        height: 450px;
+      }
+
+      .contenido-1-seccion-5 {
+        height: 100%;
+        float: left;
+        width: 50%;
+      }
+
+      .contenido-2-seccion-5 {
+        height: 100%;
+        float:left;
+        width: 50%;
+      }
+
+      .footer {
+        height: 60px;
+        text-align: left;
+        line-height: 125%;
+        position: relative;
+        color: #f5f0ed;
+        background-color: #3c3c3b;
+        font-size: small;
+      }
+  
+      .parrafo-1-footer .fecha {
+        float: left;
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+      }
+
+      .parrafo-1-footer .derechos {
+        float: left;
+        position: absolute;
+        top: 25%;
+        bottom: 25%;
+        left: 15%;
+        right: 15%;
+      }
+    }
+}
